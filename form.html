@@ -14,12 +14,30 @@
          Types: test, radio
          -->
     <label for="fName">First name:</label>
-    <input type="text" name="fName" id="fName" value="Enter First Name"/><br />
+    <input type="text" name="fName" id="fName" value="Enter First Name"/><br /><br />
 
+    <!-- Radio buttons rely on having the same name to represent the same selection.
+         The value attribute stores the data of the choice.
+         The id attribute is a unique identifier used for styling.
+    -->
     Are you alive?
     <label>Yes</label><input type="radio" name="alive" id="yes" value="yes">
-    <label>No</label><input type="radio" name="alive" id="no" value="no">
+    <label>No</label><input type="radio" name="alive" id="no" value="no"><br /><br />
 
+    <!-- Checkboxes must have different names and id's.  Unlike radio buttons
+         mutliple can be selected.
+    -->
+    Check all of the following that apply: <br />
+    <input type="checkbox" name="webDesign" value="Web Design" id="webDesign">
+    <label for="webDesign">Web Design</label><br />
+
+
+    <input type="checkbox" name="csp" value="Computer Science Principles" id="csp">
+    <label>Computer Science Principles</label><br />
+
+
+    <input type="checkbox" name="cybersecurity" value="Cybersecurity" id="cybersecurity">
+    <label for="cybersecurity">Cybersecurity</label><br />
 
 </form>
 
